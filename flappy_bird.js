@@ -33,12 +33,16 @@ scor.src = "sounds/score.mp3";
 
 
 document.addEventListener("keydown", moveUp);
-
+document.addEventListener("touchstart", mobMoveUp);
 function moveUp() {
   bY -= 30;
   fly.play();
 }
 
+function mobMoveUp(){
+    bY -= 30;
+  fly.play();
+}
 
 var pipe = [];
 
